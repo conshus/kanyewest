@@ -1,0 +1,120 @@
+html, body {
+  font-family: 'Roboto', sans-serif;
+/*  background-color: #1c007d;
+  background-image: url("../images/jeopardyset.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;*/
+}
+.flex {
+  display: flex;
+}
+.flexcolumn{
+  flex-direction: column;
+}
+.wrap{
+  flex-wrap: wrap;
+}
+.vcenter {
+  align-items: center;
+  height:100vh;
+}
+.hcenter {
+ justify-content: center;
+}
+.space_between{
+ justify-content: space-between;
+ width:100%
+}
+.space_around{
+ justify-content: space-around;
+ flex-wrap: wrap;
+}
+.flex-end{
+  justify-content: flex-end;
+}
+section{
+  width:100vw;
+  height:100vh;
+}
+#intro{
+  position: absolute;
+  z-index: 5;
+  background-color: #b7cace;
+  background-image: url("../assets/KanyeWestbackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#introRight{
+  height:95vh;
+}
+#kanyeGiph{
+  height: 20vh;
+  position: relative;
+  left: 15vh;
+  top: 10vh;
+  opacity: 0.75;
+}
+#results{
+  position: absolute;
+  background-color: #000000;
+  background-image: url("../assets/kanyewestpowerbackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#kanyeSpeechBubble{
+  display: none;
+  /*opacity:0;
+  height:0;*/
+}
+
+#kanyeQuote{
+  font-size: 5vh;
+  overflow-y: scroll;
+  max-height: 66vh;
+}
+
+#kanyeResults{
+  display: none;
+}
+
+/*Speech bubble modifications*/
+/* Right triangle, left side slightly down */
+.tri-right-btm.border.left-in:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: -40px;
+	right: auto;
+  top: auto;
+	bottom: 30px;
+	border: 20px solid;
+	border-color: #666 #666 transparent transparent;
+}
+.tri-right-btm.left-in:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: -20px;
+	right: auto;
+  top: auto;
+	bottom: 38px;
+	border: 12px solid;
+	border-color: lightyellow lightyellow transparent transparent;
+}
+#getOutTheWay{
+  position: absolute;
+  right: 300vw;
+  display: none;
+}
+
+#albumCover{
+  width:25vh;
+}
+
+#albumInfo, #restart{
+  color: white;
+  text-shadow: #000000 1px 0 10px;
+}

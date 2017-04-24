@@ -1,0 +1,12 @@
+.DS_Store
+.firebaserc
+functions
+node_modules
+config.json
+database.rules.json
+firebase.json
+node-client-text.js
+node-client-voice.js
+package.json
+server.js
+config0.json
